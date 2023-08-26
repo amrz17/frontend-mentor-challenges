@@ -75,8 +75,11 @@ body{
     font-weight: 700;
     text-align: start;
 }
+.input-email .error-state{
+    margin-left: 110px;
+    color: var(--tomato);
+}
 .input-email input, .input-email button{
-    color: var(--dhark-Slate-Grey);
     font-size: 16px;
     min-width: 375px;
     height: 50px;
@@ -84,11 +87,12 @@ body{
     cursor: pointer;
     padding: 8px;
 }
+.input-email input {
+    color: var(--dhark-Slate-Grey);
+}
 .input-email button{
-    font-size: 16px;
     font-weight: 700;
     background-color: var(--dhark-Slate-Grey);
-    border: none;
     color: var(--white);
     margin-top: 8px;
     cursor: pointer;
@@ -166,7 +170,7 @@ body{
     }
     .sign-up-desc h1{
         font-size: 45px;
-        margin-top: -35px;
+        margin-top: -30px;
         margin-bottom: 10px;
         display: flex;
         justify-content: start;

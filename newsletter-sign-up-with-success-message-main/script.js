@@ -10,7 +10,9 @@ const compliteSignUp = document.getElementById("complete-sign-up");
 submitBtn.addEventListener("click", function(e){
     e.preventDefault();
     if(inputBox.value === ''){
-        alert("You must input your email first")
+        const errorMassage = document.querySelector(".error-state");
+        errorMassage.classList.remove("hide");
+        inputBox.style.borderColor = "hsl(4, 100%, 67%)";
     } else{
         cardSignUp.classList.add("hide");
         cardComplite.classList.remove("hide");
