@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --tomato: hsl(4, 100%, 67%);
+     /* Neutral */
+    --dhark-Slate-Grey: hsl(234, 29%, 20%);
+    --charcoal-Grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+}
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--charcoal-Grey);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+    background-color: var(--white);
+}
+.container img{
+    margin: 20px;
+    max-height: 500px;
+}
+.img-sign-up-for-mobile{
+    display: none;
+}
+.sign-up-desc{
+    margin: 20px;
+    text-align: start;
+    padding: 20px;
+    min-width: 375px;
+}
+.sign-up-desc h1{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.sign-up-desc p{
+    color: var(--charcoal-Grey);
+    font-size: 16px;
+    text-align: start;
+    margin-bottom: 20px;
+}
+.list-benefit{
+    margin-bottom: 30px;
+    color: var(--charcoal-Grey);
+}
+.list-benefit li{
+    display: flex;
+    list-style: none;
+    margin: 15px 0;
+}
+.list-benefit li img{
+    margin: 0 10px 0 0;
+}
+
+.input-email{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+.input-email label{
+    font-weight: 700;
+    text-align: start;
+}
+.input-email input, .input-email button{
+    color: var(--dhark-Slate-Grey);
+    font-size: 16px;
+    min-width: 375px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 8px;
+}
+.input-email button{
+    font-size: 16px;
+    font-weight: 700;
+    background-color: var(--dhark-Slate-Grey);
+    border: none;
+    color: var(--white);
+    margin-top: 8px;
+    cursor: pointer;
+    border: none;
+}
+.input-email button:hover{
+   background-color: var(--tomato);
+   box-shadow: 0 4px 8px 0 rgba(255, 98, 87, 0.5);
+}
+
+/* Css Response btn Sub */
+
+.hide{
+    display: none;
+}
+
+.container-sub{
+    background-color: var(--white);
+    width: 480px;
+    height: 480px;
+    border-radius: 20px;
+}
+.subs-info{
+    margin: 40px auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.subs-info img{
+    align-items: start;
+    width: 64px;
+    height: 64px;
+    margin: 20px 0;
+}
+.subs-info h1{
+    font-size: 50px;
+}
+.subs-info p{
+    font-size: 16px;
+    color: var(--charcoal-Grey);
+    margin: 20px 0;
+}
+.subs-info button{
+    height: 60px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--white);
+    background-color: var(--dhark-Slate-Grey);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.subs-info button:hover{
+    background-color: var(--tomato);
+    box-shadow: 0 4px 8px 0 rgba(255, 98, 87, 0.5);
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+    body{
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    .container{
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+        flex-direction: column-reverse;
+    }
+    .sign-up-desc{
+        margin-left: 20px;
+    }
+    .sign-up-desc h1{
+        font-size: 45px;
+        margin-top: -35px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: start;
+    }
+    .container img {
+        margin: 0;    
+        padding: 0;
+    }
+    .img-sign-up{
+        display: none;
+    }
+    .img-sign-up-for-mobile{
+        display: block;
+        top: 0;
+        max-width: 768px;
+    }
+    .list-benefit{
+        margin-bottom: 20px;
+    }
+    .input-email{
+        gap: 8px;
+    }  
+}
