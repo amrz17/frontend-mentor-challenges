@@ -21,26 +21,39 @@
     <div class="input-field">
       <form>
         <div class="days field">
-          <label for="day">DAY</label>
-          <input type="number" name="day" id="input-day" placeholder="DD"
-          onkeypress="if(this.value.length==2)return false;">
+          <label class="days-label" for="day">DAY</label>
+          <input type="number" name="days" id="input-days" placeholder="DD"
+          onkeypress="onKeyPressDay(event)" onkeydown="return event.keyCode !== 
+          69 && event.keyCode !== 187 && event.keyCode !== 189">
+          <span class="error-massage-day hide">
+            Must be valid day
+          </span>
           <span class="error-massage hide">
-            Must be valid date
+            This field is required
           </span>
         </div>
-        <div class="month field">
-          <label for="month">MONTH</label>
-          <input type="number" name="month" id="input-month" placeholder="MM"
-          onkeypress="if(this.value.length==2)return false;">
+        <div class="months field">
+          <label class="months-label" for="month">MONTH</label>
+          <input type="number" name="months" id="input-months" placeholder="MM"
+          onkeypress="onKeyPressMonth(event)" onkeydown="return event.keyCode !== 
+          69 && event.keyCode !== 187 && event.keyCode !== 189">
+          <span class="error-massage-month hide">
+            Must be valid month
+          </span>
           <span class="error-massage hide">
-            Must be valid date
+            This field is required
           </span>
         </div>
-        <div class="year field">
-          <label for="years">YEAR</label>
-          <input type="number" name="years" id="input-years" placeholder="YYYY" onkeypress="if(this.value.length==4)return false;">
+        <div class="years field">
+          <label class="years-label" for="years">YEAR</label>
+          <input type="number" name="years" id="input-years" placeholder="YYYY" 
+          onkeypress="onKeyPressYear(event)" onkeydown="return event.keyCode !==
+           69 && event.keyCode !== 187 && event.keyCode !== 189">
+          <span class="error-massage-year hide">
+            Must be in the past
+          </span>
           <span class="error-massage hide">
-            Must be valid date
+            This field is required
           </span>
         </div>
         

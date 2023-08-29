@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
-
-/* The designs were created to the following widths:
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap'); /* The designs were created to the following widths:
 - Mobile: 375px
 - Desktop: 1440px */ 
 /* - Font size (inputs): 32px */
@@ -44,7 +41,7 @@ body{
     margin: 50px 60px 10px 60px;
 }
 .field{
-    width: 160px;
+    width: 170px;
     align-items: start;
 }
 form{
@@ -69,11 +66,10 @@ input:hover{
 .hide {
     display: none;
 }
-.error-massage{
+.error-massage, .error-massage-year{
     color: var(--light-red);
     font-weight: 400;
     font-style: italic;
-    margin-left: 5px;
 }
 input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
