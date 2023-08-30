@@ -9,10 +9,11 @@ const compliteSignUp = document.getElementById("complete-sign-up");
 
 submitBtn.addEventListener("click", function(e){
     e.preventDefault();
-    if(inputBox.value === ''){
+    if(inputBox.value === '' || !inputBox.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)){
         const errorMassage = document.querySelector(".error-state");
         errorMassage.classList.remove("hide");
-        inputBox.style.borderColor = "hsl(4, 100%, 67%)";
+        inputBox.style.borderColor = "#ffe8e6";
+        inputBox.style.backgroundColor ="#ffe8e6"; 
     } else{
         cardSignUp.classList.add("hide");
         cardComplite.classList.remove("hide");
