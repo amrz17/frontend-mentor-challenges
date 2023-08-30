@@ -110,3 +110,68 @@ button:hover{
 span{
     color: var(--purple);
 }
+@media only screen and (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .container{
+    width: 365px;
+    height: 365px;
+  }
+  .input-field{
+    margin: 0;
+    padding: 0;
+  }
+  .field{
+    width: 20%;
+    margin-top: 30px;
+  }
+ .days{
+    margin-left: 20px;
+ }
+ form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+ }
+ input{
+    margin-top: 0;
+    font-size: 1rem;
+    width: 90px;
+    height: 60px;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+ }
+ .btn-field{
+    display: flex;
+    justify-content: center;
+    border: none;
+ }
+ .img-btn{
+    height: 30px;
+    width: 65px;
+ }
+ button{
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    background-color: var(--purple);
+    cursor: pointer;
+    z-index: 1000;
+    margin-right: 43%;
+ }
+ .output-field{
+    margin: 10px 0 0 20px;
+    font-size: 1.7rem;
+    font-weight: 800;
+    font-style: italic;
+ }
+ .error-massage, .error-massage-year{
+    font-size: 0.7rem;
+
+ }
+}
