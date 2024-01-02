@@ -6,7 +6,7 @@ export function Nav() {
   const [openMenu, setOpenMenu] = useState(false);
   return (
     <header className="w-full absolute p-4 md:p-6 lg:p-8">
-      <nav className="flex justify-between w-full ">
+      <nav className="flex justify-between w-full max-container">
         <div className="md:ml-10 lg:ml-52">
           <img src={logo} />
         </div>
