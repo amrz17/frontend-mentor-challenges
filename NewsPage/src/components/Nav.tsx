@@ -12,7 +12,10 @@ export function Nav() {
         </div>
         <div className="md:flex hidden items-center list-none gap-8 md:mr-10 lg:mr-52">
           {navLink.map((link) => (
-            <li key={link.label} className="text-xl hover:text-orange-50">
+            <li
+              key={link.label}
+              className="text-xl text-Grayish-blue hover:text-Soft-red"
+            >
               <a href={link.href}>{link.label}</a>
             </li>
           ))}
@@ -41,7 +44,7 @@ export function Nav() {
             </div>
             <ul className="ml-10 mt-14 text-2xl">
               {navLink.map((link) => (
-                <li key={link.label} className="py-5">
+                <li key={link.label} className="py-5 hover:text-Soft-red">
                   <a href={link.href}>{link.label}</a>
                 </li>
               ))}
